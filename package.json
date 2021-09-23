@@ -1,10 +1,7 @@
 {
-  "name": "sassdoc-theme-flippant",
-  "version": "1.0.1",
+  "name": "sassdoc-theme-flippant-fork",
+  "version": "0.1.0-alpha",
   "description": "A modified version of Sassdoc's default theme",
-  "keywords": [
-    "sassdoc-theme"
-  ],
   "files": [
     "assets",
     "views",
@@ -30,12 +27,14 @@
     "es6-denodeify": "^0.1.0",
     "es6-promise": "^2.0.1",
     "extend": "^2.0.0",
-    "fs-extra": "^8.1.0",
-    "html-minifier": "^4.0.0",
-    "sassdoc-extras": "^2.5.1",
-    "swig": "^1.4.2",
+    "fs-extra": "^0.30.0",
+    "html-minifier": "^0.7.0",
+    "sassdoc-extras": "^2.4.0",
+    "swig": "1.4.0",
     "swig-extras": "^0.0.1"
   },
   "homepage": "https://github.com/dbox/flippant#readme",
-  "devDependencies": {}
+  "__npminstall_done": true,
+  "_from": "sassdoc-theme-flippant@0.1.0",
+  "_resolved": "https://registry.npm.alibaba-inc.com/sassdoc-theme-flippant/download/sassdoc-theme-flippant-0.1.0.tgz"
 }
