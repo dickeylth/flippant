@@ -4,7 +4,7 @@
 <div class="item__code-wrapper">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
-    data-expanded="%{{ item.context.name }} { {{ item.context.code }} }"
+    data-expanded="%{{ item.context.name }} { {{ item.context.code | encode }} }"
     data-collapsed="%{{ item.context.name }} { ... }"><code>%{{ item.context.name }} { ... }</code></pre>
 
   {% if basePath %}
@@ -52,7 +52,7 @@
 <div class="item__code-wrapper">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
-    data-expanded="@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { {{ item.context.code }} }"
+    data-expanded="@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { {{ item.context.code | encode }} }"
     data-collapsed="@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { ... }"><code>@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { ... }</code></pre>
 
   {% if basePath %}

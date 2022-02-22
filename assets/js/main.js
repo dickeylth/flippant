@@ -39,7 +39,7 @@
       switchTo = $item.attr('data-current-state') === 'expanded' ? 'collapsed' : 'expanded';
 
       $item.attr('data-current-state', switchTo);
-      $code.html($item.attr('data-' + switchTo));
+      $code.html(decodeURIComponent($item.attr('data-' + switchTo)));
       Prism.highlightElement($code[0]);
     });
   };

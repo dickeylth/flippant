@@ -82,6 +82,7 @@ var maybeYiqContrast = function (color) {
 swig.setFilter("in", function (key, object) {
   return key in object;
 });
+swig.setFilter('encode', encodeURIComponent);
 swig.setFilter("is_color", isColor);
 swig.setFilter("display_as_type", safe(displayAsType));
 swig.setFilter("yiq", maybeYiqContrast);
