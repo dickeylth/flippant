@@ -83,7 +83,7 @@ swig.setFilter("in", function (key, object) {
   return key in object;
 });
 swig.setFilter('base64', str => {
-  return Buffer.from(str).toString('base64');
+  return `base64(${Buffer.from(str).toString('base64')})`;
 });
 swig.setFilter("is_color", isColor);
 swig.setFilter("display_as_type", safe(displayAsType));
